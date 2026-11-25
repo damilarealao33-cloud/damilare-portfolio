@@ -5,98 +5,120 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Portfolio of Damilare — professional web developer building thoughtful, responsive websites and high-impact digital experiences.">
-  <meta name="theme-color" content="#10110f">
-  <title>Damilare — Web Developer & Digital Experiences</title>
+    content="Portfolio of Damilare Alao — web developer building fast, responsive, and purpose-driven websites and web applications.">
+  <meta name="author" content="Damilare Alao">
+  <meta name="theme-color" content="#09090b">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Damilare Alao — Web Developer &amp; UI Builder">
+  <meta property="og:description"
+    content="Websites engineered for clarity, speed, and purpose. Explore selected web applications, WordPress builds, and responsive demos by Damilare Alao.">
+  <meta property="og:image" content="portfolio screenshot/vai.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Damilare Alao — Web Developer &amp; UI Builder">
+  <meta name="twitter:description"
+    content="Websites engineered for clarity, speed, and purpose. Explore selected work by Damilare Alao.">
+
+  <title>Damilare Alao — Web Developer &amp; Digital Experiences</title>
+
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2309090b'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23f59e0b' font-family='monospace' font-weight='700' font-size='16'%3ED%3C/text%3E%3C/svg%3E">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <div class="site-shell">
-    <header class="site-header">
-      <a class="brand" href="#home" aria-label="Damilare home">
+    <header class="site-header" id="site-header">
+      <a class="brand" href="#home" aria-label="Damilare Alao home">
         <span class="brand-name">DAMILARE<span> / WEB DEVELOPER</span></span>
       </a>
-      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"
+        aria-controls="primary-nav">
         <span></span><span></span>
       </button>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#work">Work <span>01</span></a>
-        <a href="#services">Services <span>02</span></a>
-        <a href="#about">About <span>03</span></a>
-        <a class="nav-contact" href="#contact">Let's talk <span>↗</span></a>
+      <nav class="nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#work" data-nav="work">Work</a>
+        <a href="#services" data-nav="services">Services</a>
+        <a href="#about" data-nav="about">About</a>
+        <a class="nav-contact" href="#contact" data-nav="contact">Let's talk <span>↗</span></a>
       </nav>
     </header>
 
-    <main>
+    <main id="main-content">
+      <!-- HERO SECTION -->
       <section class="hero section-pad" id="home">
-        <div class="hero-topline">
-          <span class="eyebrow"><span class="status-dot"></span>AVAILABLE FOR SELECT PROJECTS</span>
-          <span class="mono">INDEPENDENT DEVELOPER · NIGERIA</span>
-        </div>
         <div class="hero-content">
           <div class="hero-copy">
-            <p class="eyebrow accent">I DESIGN & BUILD FOR THE WEB</p>
-            <h1>Digital experiences<br>with <span class="serif-word">purpose.</span></h1>
-            <p class="hero-description">I help businesses turn ideas into clear, engaging websites — designed to look
-              great, work smoothly, and make the next step easy for every visitor.</p>
+            <p class="eyebrow accent">WEB DEVELOPER</p>
+            <h1>Damilare <span class="serif-word">Alao.</span></h1>
+            <p class="hero-tagline">Building fast, responsive websites and web applications.</p>
+            <p class="hero-description">I turn product requirements and visual designs into clean, production-ready
+              web experiences using HTML, CSS, JavaScript, WordPress, and Firebase.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#work">Explore my work <span>↘</span></a>
-              <a class="text-link" href="#contact">Have a project in mind? <span>↗</span></a>
+              <a class="button button-primary" href="#work">View my work <span aria-hidden="true">↘</span></a>
+              <a class="text-link" href="#contact">Contact me <span aria-hidden="true">↗</span></a>
             </div>
           </div>
-          <div class="hero-art" aria-label="Abstract portfolio artwork">
-            <div class="art-orbit orbit-one"></div>
-            <div class="art-orbit orbit-two"></div>
-            <div class="art-sun"></div>
-            <div class="art-grid"></div>
-            <div class="art-label label-top">CREATIVE THINKING<br>+ CLEAN BUILD</div>
-            <div class="art-label label-bottom"><span>01 — 04</span><br>BUILT WITH INTENTION</div>
-            <div class="art-stamp">MAKE<br>IT<br><em>MATTER.</em></div>
-          </div>
-        </div>
-        <div class="hero-footer">
-          <span>WEB DESIGN / DEVELOPMENT</span>
-          <span class="scroll-cue"><span></span> SCROLL TO EXPLORE</span>
-          <span>DETAILS MAKE THE DIFFERENCE ↘</span>
         </div>
       </section>
 
-      <section class="work-section section-pad" id="work">
+      <!-- WORK SECTION -->
+      <section class="work-section section-pad" id="work" aria-labelledby="work-heading">
         <div class="section-heading">
           <div>
-            <p class="eyebrow accent">A FEW THINGS I'VE BUILT</p>
-            <h2>Selected <span class="serif-word">work.</span></h2>
+            <p class="eyebrow accent">SELECTED SHOWCASES</p>
+            <h2 id="work-heading">Featured <span class="serif-word">work.</span></h2>
           </div>
-          <p class="section-intro">Real projects, practical thinking, and a focus on making the experience better for
-            the people using it.</p>
+          <p class="section-intro">Real projects, practical architecture, and a focus on making every interaction
+            intuitive for the people using it.</p>
+        </div>
+
+        <div class="filter-bar" role="region" aria-label="Filter projects by category">
+          <div class="filter-group" role="tablist" aria-label="Project categories">
+            <button class="filter-btn is-active" type="button" role="tab" aria-selected="true"
+              data-filter="all">All</button>
+            <button class="filter-btn" type="button" role="tab" aria-selected="false"
+              data-filter="web-app">Web App</button>
+            <button class="filter-btn" type="button" role="tab" aria-selected="false"
+              data-filter="wordpress">WordPress</button>
+            <button class="filter-btn" type="button" role="tab" aria-selected="false"
+              data-filter="demo">Demos</button>
+          </div>
+          <span class="filter-count" id="filter-count" aria-live="polite">Showing 4 of 4 projects</span>
         </div>
 
         <div class="projects-grid">
-          <!-- Project 01: Visionary Africa Initiative -->
-          <article class="project-card">
+          <!-- Project 01: Visionary Africa Initiative (Client Project) -->
+          <article class="project-card" data-category="wordpress" data-project="vai">
             <div class="project-visual">
               <div class="browser-bar">
                 <span></span><span></span><span></span>
                 <div>visionaryafricainitiative.org</div>
               </div>
-              <img class="project-screenshot" src="vai.png"
-                alt="Visionary Africa Initiative website screenshot" loading="lazy">
+              <div class="project-screenshot-wrap">
+                <img class="project-screenshot" src="portfolio screenshot/vai.png"
+                  alt="Visionary Africa Initiative website screenshot" loading="lazy" decoding="async">
+              </div>
             </div>
             <div class="project-info">
               <div class="project-meta">
-                <span>01 / ORGANISATIONAL WEBSITE</span>
+                <span class="project-category-badge">01 / CLIENT PROJECT · WORDPRESS</span>
                 <span>2026</span>
               </div>
               <h3 class="project-title">Visionary Africa Initiative</h3>
-              <p class="project-summary">Nonprofit and leadership initiative website focused on communicating the
-                initiative's vision, programmes, impact, and opportunities to get involved.</p>
+              <p class="project-role">Role: WordPress Developer &amp; UI Implementation</p>
+              <p class="project-summary">Nonprofit and leadership initiative website structured to communicate the
+                organisation's vision, programmes, impact, and clear pathways for supporters to get involved.</p>
               <div class="tag-list">
                 <span>WordPress</span>
                 <span>PHP</span>
@@ -104,31 +126,34 @@
                 <span>Responsive Design</span>
               </div>
               <div class="project-links">
-                <a class="button button-card-primary" href="https://visionaryafricainitiative.org/" target="_blank"
-                  rel="noopener">View live website <span>↗</span></a>
-                <a class="text-link secondary-link" href="#contact">Discuss similar project <span>↗</span></a>
+                <a class="button-card-primary" href="https://visionaryafricainitiative.org/" target="_blank"
+                  rel="noopener">View live website <span aria-hidden="true">↗</span></a>
+                <button class="button-ghost" type="button" data-modal-trigger="vai">Project details</button>
               </div>
             </div>
           </article>
-          
-          <!-- Project 02: DLuxe Affairs -->
-          <article class="project-card">
+
+          <!-- Project 02: DLuxe Affairs (Client Project) -->
+          <article class="project-card" data-category="web-app" data-project="dluxe">
             <div class="project-visual">
               <div class="browser-bar">
                 <span></span><span></span><span></span>
                 <div>d-luxe-web.web.app</div>
               </div>
-              <img class="project-screenshot" src="dluxe-affairs.png"
-                alt="DLuxe Affairs website screenshot" loading="lazy">
+              <div class="project-screenshot-wrap">
+                <img class="project-screenshot" src="portfolio screenshot/dluxe-affairs.png"
+                  alt="DLuxe Affairs event booking website screenshot" loading="lazy" decoding="async">
+              </div>
             </div>
             <div class="project-info">
               <div class="project-meta">
-                <span>02 / WEB APPLICATION</span>
+                <span class="project-category-badge">02 / CLIENT PROJECT · WEB APP</span>
                 <span>2026</span>
               </div>
               <h3 class="project-title">DLuxe Affairs</h3>
+              <p class="project-role">Role: Design, Front-End &amp; Firebase Integration</p>
               <p class="project-summary">Event booking and management website that helps visitors submit event requests
-                while giving the admin a practical way to manage enquiries and update request statuses.</p>
+                while giving the admin a practical workflow to review enquiries and update request statuses.</p>
               <div class="tag-list">
                 <span>HTML &amp; CSS</span>
                 <span>JavaScript</span>
@@ -136,117 +161,151 @@
                 <span>Firestore</span>
               </div>
               <div class="project-links">
-                <a class="button button-card-primary" href="https://d-luxe-web.web.app/" target="_blank"
-                  rel="noopener">View live website <span>↗</span></a>
-                <a class="text-link secondary-link" href="#contact">Discuss similar project <span>↗</span></a>
+                <a class="button-card-primary" href="https://d-luxe-web.web.app/" target="_blank"
+                  rel="noopener">View live website <span aria-hidden="true">↗</span></a>
+                <button class="button-ghost" type="button" data-modal-trigger="dluxe">Project details</button>
               </div>
             </div>
           </article>
 
-          <!-- Project 03: Clothing Store -->
-          <article class="project-card">
+          <!-- Project 03: Clothing Store Demo (Concept Demo) -->
+          <article class="project-card" data-category="demo" data-project="clothing">
             <div class="project-visual">
               <div class="browser-bar">
                 <span></span><span></span><span></span>
                 <div>clothing-store-cda5f.web.app</div>
               </div>
-              <img class="project-screenshot" src="clothing-store.png"
-                alt="Clothing Store website screenshot" loading="lazy">
+              <div class="project-screenshot-wrap">
+                <img class="project-screenshot" src="portfolio screenshot/clothing-store.png"
+                  alt="Clothing Store Demo e-commerce homepage screenshot" loading="lazy" decoding="async">
+              </div>
             </div>
             <div class="project-info">
               <div class="project-meta">
-                <span>03 / E-COMMERCE HOMEPAGE DEMO</span>
+                <span class="project-category-badge is-demo">03 / CONCEPT DEMO · E-COMMERCE</span>
                 <span>2024</span>
               </div>
-              <h3 class="project-title">Clothing Store</h3>
-              <p class="project-summary">Clothing and fashion website homepage demo showcasing contemporary product
-                presentation, clean editorial layout, and responsive mobile-first styling.</p>
+              <h3 class="project-title">Clothing Store Demo</h3>
+              <p class="project-role">Role: UI Concept &amp; Front-End Development</p>
+              <p class="project-summary">Fashion and apparel homepage demonstration showcasing editorial product
+                presentation, structured collection sections, and responsive mobile-first styling backed by Firebase.</p>
               <div class="tag-list">
                 <span>HTML5 &amp; CSS3</span>
                 <span>JavaScript</span>
                 <span>Firebase</span>
                 <span>Firestore</span>
-                <span>Homepage Demo</span>
               </div>
               <div class="project-links">
-                <a class="button button-card-primary" href="https://clothing-store-cda5f.web.app/index.html"
-                  target="_blank" rel="noopener">Explore homepage demo <span>↗</span></a>
-                <a class="text-link secondary-link" href="#contact">Discuss similar project <span>↗</span></a>
+                <a class="button-card-primary" href="https://clothing-store-cda5f.web.app/index.html"
+                  target="_blank" rel="noopener">Explore live demo <span aria-hidden="true">↗</span></a>
+                <button class="button-ghost" type="button" data-modal-trigger="clothing">Project details</button>
               </div>
             </div>
           </article>
 
-          <!-- Project 04: FrieslandCampina Demo -->
-          <article class="project-card">
+          <!-- Project 04: FrieslandCampina Demo (Concept Demo) -->
+          <article class="project-card" data-category="demo" data-project="friesland">
             <div class="project-visual">
               <div class="browser-bar">
                 <span></span><span></span><span></span>
                 <div>frieslandcampinademo.web.app</div>
               </div>
-              <img class="project-screenshot" src="frieslandcampinademo.png"
-                alt="FrieslandCampina Demo website screenshot" loading="lazy">
+              <div class="project-screenshot-wrap">
+                <img class="project-screenshot" src="portfolio screenshot/frieslandcampinademo.png"
+                  alt="FrieslandCampina Demo corporate website screenshot" loading="lazy" decoding="async">
+              </div>
             </div>
             <div class="project-info">
               <div class="project-meta">
-                <span>04 / CORPORATE HOMEPAGE DEMO</span>
+                <span class="project-category-badge is-demo">04 / CONCEPT DEMO · CORPORATE</span>
                 <span>2024</span>
               </div>
               <h3 class="project-title">FrieslandCampina Demo</h3>
-              <p class="project-summary">Corporate website homepage demo and brand showcase presenting product portfolio
-                highlights, global dairy heritage storytelling, and responsive layout structure.</p>
+              <p class="project-role">Role: UI Concept &amp; Front-End Development</p>
+              <p class="project-summary">Corporate homepage demonstration and brand showcase presenting product portfolio
+                highlights, dairy heritage storytelling, and a clean responsive layout structure.</p>
               <div class="tag-list">
                 <span>HTML5 &amp; CSS3</span>
                 <span>JavaScript</span>
                 <span>Responsive Design</span>
-                <span>Homepage Demo</span>
+                <span>Firebase Hosting</span>
               </div>
               <div class="project-links">
-                <a class="button button-card-primary" href="https://frieslandcampinademo.web.app/" target="_blank"
-                  rel="noopener">Explore homepage demo <span>↗</span></a>
-                <a class="text-link secondary-link" href="#contact">Discuss similar project <span>↗</span></a>
+                <a class="button-card-primary" href="https://frieslandcampinademo.web.app/" target="_blank"
+                  rel="noopener">Explore live demo <span aria-hidden="true">↗</span></a>
+                <button class="button-ghost" type="button" data-modal-trigger="friesland">Project details</button>
               </div>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="services-section section-pad" id="services">
+      <!-- SERVICES SECTION -->
+      <section class="services-section section-pad" id="services" aria-labelledby="services-heading">
         <div class="section-heading">
           <div>
             <p class="eyebrow accent">HOW I CAN HELP</p>
-            <h2>Good work.<br><span class="serif-word">Clear outcomes.</span></h2>
+            <h2 id="services-heading">Good work.<br><span class="serif-word">Clear outcomes.</span></h2>
           </div>
           <p class="section-intro">From a first website to a thoughtful revamp, I focus on what your visitors need and
             what your business wants to achieve.</p>
         </div>
+
         <div class="service-grid">
           <article class="service-item">
             <span class="service-number">01</span>
-            <div class="service-icon" aria-hidden="true">↗</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
             <h3>Website design &amp; development</h3>
-            <p>Modern, responsive websites that bring your brand and message together in a clear, polished experience.
-            </p>
+            <p>Modern, responsive websites that bring your brand and message together in a clear, polished experience.</p>
             <span class="service-line"></span>
           </article>
+
           <article class="service-item">
             <span class="service-number">02</span>
-            <div class="service-icon" aria-hidden="true">⌘</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20h9"></path>
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+              </svg>
+            </div>
             <h3>Website revamps</h3>
-            <p>Improve an existing website's layout, usability, mobile experience, and visual consistency for better
+            <p>Improve an existing website's layout, usability, mobile experience, and visual consistency for stronger
               visitor trust.</p>
             <span class="service-line"></span>
           </article>
+
           <article class="service-item">
             <span class="service-number">03</span>
-            <div class="service-icon" aria-hidden="true">◎</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+            </div>
             <h3>WordPress websites</h3>
             <p>Flexible, maintainable websites that help organisations manage content and grow their online presence
               effectively.</p>
             <span class="service-line"></span>
           </article>
+
           <article class="service-item">
             <span class="service-number">04</span>
-            <div class="service-icon" aria-hidden="true">↔</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
             <h3>Responsive optimisation</h3>
             <p>Thoughtful layouts and interactions that adapt seamlessly across desktop, tablet, and mobile screens.</p>
             <span class="service-line"></span>
@@ -254,23 +313,22 @@
         </div>
       </section>
 
-      <section class="about-section section-pad" id="about">
-        <div class="about-profile-card">
-          <div class="card-glow"></div>
+      <!-- ABOUT SECTION -->
+      <section class="about-section section-pad" id="about" aria-labelledby="about-heading">
+        <aside class="about-profile-card" aria-label="Developer profile summary">
           <div class="profile-card-top">
             <span class="code-pill">&lt;developer /&gt;</span>
-            <span class="status-indicator"><span class="pulse-dot"></span> Available</span>
+            <span class="status-indicator"><span class="pulse-dot" aria-hidden="true"></span> Available</span>
           </div>
           <div class="profile-avatar-wrap">
             <div class="profile-circle">
-              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-                stroke-linecap="round" stroke-linejoin="round" class="dev-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round" class="dev-icon" aria-hidden="true">
                 <polyline points="16 18 22 12 16 6"></polyline>
                 <polyline points="8 6 2 12 8 18"></polyline>
                 <line x1="14" y1="4" x2="10" y2="20"></line>
               </svg>
             </div>
-            <div class="avatar-ring"></div>
           </div>
           <div class="profile-card-info">
             <strong class="dev-name">DAMILARE ALAO</strong>
@@ -289,19 +347,19 @@
           <div class="profile-card-footer">
             <span class="footer-tag">Clean Code · Purpose-Driven UI</span>
           </div>
-        </div>
+        </aside>
 
         <div class="about-content">
           <p class="eyebrow accent">A LITTLE ABOUT ME</p>
-          <h2>Curious by nature.<br><span class="serif-word">Practical by design.</span></h2>
+          <h2 id="about-heading">Curious by nature.<br><span class="serif-word">Practical by design.</span></h2>
           <p class="about-copy">
             I'm Damilare, a web developer with a Computer Science background. I don't just build websites to look
             attractive — I build them to solve real problems and achieve clear business outcomes.
           </p>
           <p class="about-copy">
-           I love the challenge of taking a blank screen and turning it into an interactive website. I am constantly building
-           personal projects to expand my skillset in HTML, CSS, JavaScript, and modern frameworks. I build web pages with
-           a strong focus on responsiveness, accessibility, and visual appeal. Let's build something amazing together!
+            When partnering with a business on a new website or a revamp, my focus starts with your visitors:
+            understanding what questions they have, what builds their trust, and how to make taking the next step
+            effortless. Every layout choice, typography pairing, and mobile interaction is created with intention.
           </p>
           <p class="about-copy">
             I value clean, maintainable code, dependable project turnaround, and open communication at every milestone.
@@ -312,53 +370,58 @@
           <div class="about-pillars">
             <div class="pillar-item">
               <span class="pillar-num">01</span>
-              <h4>Outcome-Focused</h4>
+              <h3>Outcome-Focused</h3>
               <p>Designed around visitor clarity, brand credibility, and clear next steps.</p>
             </div>
             <div class="pillar-item">
               <span class="pillar-num">02</span>
-              <h4>Fast &amp; Responsive</h4>
+              <h3>Fast &amp; Responsive</h3>
               <p>Engineered for speed, smooth mobile usability, and multi-device consistency.</p>
             </div>
             <div class="pillar-item">
               <span class="pillar-num">03</span>
-              <h4>Direct Collaboration</h4>
+              <h3>Direct Collaboration</h3>
               <p>Clear milestones, transparent communication, and reliable project delivery.</p>
             </div>
           </div>
 
           <div class="skills-block">
-            <span class="eyebrow">TOOLS &amp; TECHNOLOGIES</span>
+            <span class="eyebrow">CORE STACK &amp; CAPABILITIES</span>
             <div class="skill-list">
               <span>HTML5</span>
               <span>CSS3</span>
               <span>JavaScript (ES6+)</span>
               <span>WordPress</span>
-              <span>PHP</span>
               <span>Firebase</span>
               <span>Firestore</span>
-              <span>Git &amp; GitHub</span>
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>PHP</span>
               <span>Responsive Web Design</span>
               <span>UI / UX Principles</span>
-              <span>Performance Optimisation</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="contact-section section-pad" id="contact">
+      <!-- CONTACT SECTION -->
+      <section class="contact-section section-pad" id="contact" aria-labelledby="contact-heading">
         <div class="contact-top">
           <p class="eyebrow accent">HAVE A PROJECT IN MIND?</p>
           <span class="mono">LET'S MAKE SOMETHING USEFUL.</span>
         </div>
-        <h2>Let's build something<br><span class="serif-word">worth visiting.</span></h2>
+        <h2 id="contact-heading">Let's build something<br><span class="serif-word">worth visiting.</span></h2>
         <p class="contact-copy">Need a new website or want to improve the one you have? Tell me a little about your
           project and let's start a conversation.</p>
         <div class="contact-actions">
           <a class="button button-primary"
-            href="mailto:damilarealao33@gmail.com?subject=Website%20project%20enquiry">Email me <span>↗</span></a>
+            href="mailto:damilarealao33@gmail.com?subject=Website%20project%20enquiry">Email me <span
+              aria-hidden="true">↗</span></a>
           <a class="button button-outline" href="https://wa.me/2348121657931" target="_blank" rel="noopener">Chat on
-            WhatsApp <span>↗</span></a>
+            WhatsApp <span aria-hidden="true">↗</span></a>
+          <button class="button button-outline" type="button" id="copy-email-btn"
+            data-email="damilarealao33@gmail.com">Copy email</button>
+          <span class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></span>
         </div>
         <div class="contact-bottom">
           <span>BASED IN NIGERIA · AVAILABLE REMOTELY</span>
@@ -368,13 +431,43 @@
     </main>
 
     <footer class="site-footer">
-      <a class="brand footer-brand" href="#home" aria-label="Damilare home">
+      <a class="brand footer-brand" href="#home" aria-label="Damilare Alao home">
         <span class="brand-name">DAMILARE<span> / WEB DEVELOPER</span></span>
       </a>
       <span>BUILT WITH CARE © <span id="year">2026</span></span>
       <span>DESIGN WITH PURPOSE. BUILD WITH INTENTION.</span>
     </footer>
   </div>
+
+  <!-- ACCESSIBLE PROJECT DETAILS MODAL -->
+  <dialog class="project-modal" id="project-modal" aria-labelledby="modal-title">
+    <div class="modal-header">
+      <span class="modal-meta" id="modal-meta"></span>
+      <button class="modal-close" type="button" id="modal-close" aria-label="Close project details">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-image-frame">
+        <img id="modal-image" src="" alt="">
+      </div>
+      <h3 class="modal-title" id="modal-title"></h3>
+      <p class="modal-role" id="modal-role"></p>
+      <p class="modal-description" id="modal-description"></p>
+      <p class="modal-highlights-title">Key Implementation Details</p>
+      <ul class="modal-highlights" id="modal-highlights"></ul>
+      <div class="tag-list" id="modal-tags"></div>
+      <div class="modal-actions">
+        <a class="button-card-primary" id="modal-live-link" href="#" target="_blank" rel="noopener">Visit live site
+          <span aria-hidden="true">↗</span></a>
+        <a class="button-ghost" id="modal-enquiry-link" href="#contact">Discuss a similar project</a>
+      </div>
+    </div>
+  </dialog>
 </body>
 
 </html>
