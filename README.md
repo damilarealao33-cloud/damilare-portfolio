@@ -1,21 +1,45 @@
-# Damilare Portfolio
+# Damilare Alao — Web Developer Portfolio
 
-## Files
-- `index.html` — page content
-- `style.css` — layout, colours, responsiveness
-- `script.js` — mobile menu, current year, scroll reveal
+A static, zero-build personal portfolio built with **HTML5**, **CSS3**, and **Vanilla JavaScript (ES6+)** using a near-black and warm amber design system.
 
-## Before sharing this portfolio
-1. Open `index.html` in VS Code.
-2. Replace `Damilare` with the name you want to use, if needed.
-3. In `index.html`, replace `YOUR_EMAIL@example.com` with your actual email address.
-4. Replace `YOURPHONENUMBER` with your WhatsApp number in international format, digits only (for example, 2348012345678; do not include `+`).
-5. Replace the illustrative project preview panels with screenshots from the actual websites. Easiest method: create an `images` folder, save screenshots there, then replace the mockup `<div class="project-visual ...">...</div>` with an `<img>` using a path such as `images/dluxe-homepage.png`. Add CSS `width: 100%; height: auto; display: block;` to the image.
-6. Check that the live project links are correct and that you have permission to show the VAI work.
-7. Test on mobile and desktop before sending the link to anyone.
+## Project Structure
 
-## Run locally
-Open the folder in VS Code. If you have the Live Server extension, right-click `index.html` and choose **Open with Live Server**. Otherwise, open `index.html` in a browser.
+```text
+Damilare-portfolio/
+├── index.html                  # Main single-page document & accessible modal
+├── style.css                   # Entry stylesheet importing modular CSS layers
+├── script.js                   # Navigation, scroll-spy, filters, modal, copy, scroll reveal
+├── README.md                   # Project documentation
+├── styles/
+│   ├── tokens.css              # Design tokens (colors, typography, spacing, motion)
+│   ├── base.css                # Reset, typography, focus-visible & skip-link utilities
+│   ├── components.css          # Header, buttons, filters, project cards & dialog modal
+│   ├── sections.css            # Hero, Work, Services, About, Contact, Footer & breakpoints
+│   └── animations.css          # Keyframes, staggered reveal & prefers-reduced-motion
+├── assets/
+│   └── hero-sculpture.jpg      # 3D abstract metallic & glass hero sculpture
+└── portfolio screenshot/       # Project preview screenshots
+    ├── clothing-store.png
+    ├── dluxe-affairs.png
+    ├── frieslandcampinademo.png
+    └── vai.png
+```
 
-## Publish
-This is a static website and can be hosted on GitHub Pages, Netlify, or Firebase Hosting. The downloaded files are not published yet.
+## Features
+
+- **Design System:** Near-black surfaces (`#09090b` / `#0e0e12` / `#141418`) with warm amber accents (`#f59e0b` / `#fbbf24`), `Manrope`, `Instrument Serif`, and `DM Mono`.
+- **Interactive Project Showcase:** Category filtering (`All`, `Web App`, `WordPress`, `Demos`) and an accessible `<dialog>` project details modal.
+- **Navigation & Scroll:** Sticky header with scroll elevation, active section scroll-spy, and responsive mobile drawer.
+- **Accessibility:** Skip-to-content link, `:focus-visible` outlines, ARIA attributes, and `prefers-reduced-motion` support.
+
+## Run Locally
+
+Open the folder in VS Code and launch `index.html` with the **Live Server** extension, or serve the directory with any static file server:
+
+```bash
+npx serve .
+```
+
+## Deployment
+
+This is a static website and can be hosted directly on **GitHub Pages**, **Netlify**, **Vercel**, or **Firebase Hosting**.
